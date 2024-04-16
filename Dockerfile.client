@@ -1,0 +1,15 @@
+FROM node:14-alpine
+
+WORKDIR /musicrecommender
+
+COPY musicrecommender/*.json ./
+RUN npm install
+COPY musicrecommender/*.js ./
+COPY musicrecommender/src/ ./src/
+COPY musicrecommender/public/ ./public/
+RUN npm run build
+
+
+EXPOSE 3000
+
+CMD ["npm", "start"]

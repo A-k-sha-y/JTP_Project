@@ -1,0 +1,16 @@
+FROM python:3.9-slim
+
+WORKDIR /server
+
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir Flask
+
+RUN pip install --upgrade pip -r requirements.txt && pip install gunicorn
+
+COPY /server/ .
+
+EXPOSE 5000
+
+# CMD ["flask","run"]
+CMD ["gunicorn","-b",":5000","app:app"]
