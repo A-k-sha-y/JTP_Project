@@ -10,7 +10,7 @@ This project consists of Flask application for the backend API, React for client
 - [Setting up the app](#run-locally)
     - [Running with Docker](#running-with-docker)
     - [Running without Docker](#running-without-docker)
-- [Usage](#usage)
+- [How to use](#how-to-use)
 
 ## Features
 
@@ -99,7 +99,7 @@ Step 7: Run the application
 
 Step 8: To access the application, go to your browser and type `http://localhost:3000` in the address bar.
 
-## Usage
+## How to use
 
 Step 1: Open a browser and type `localhost:3000` in the Address bar.
 
