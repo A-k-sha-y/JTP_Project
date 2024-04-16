@@ -117,6 +117,26 @@ Step 4: Once you click on the play, The application will show you the similar so
 ![Recommendation](https://raw.githubusercontent.com/A-k-sha-y/JTP_Project/master/screenshots/Recommendation.png)
 ![Recommendation](https://raw.githubusercontent.com/A-k-sha-y/JTP_Project/master/screenshots/Recommendation2.png)
 
+## API Documentation
+
+1. -POST /search
+- Takes input from searchbar
+- Searches songs according to input using similarity
+- Returns the response JSON
+
+2. -POST /recommend
+- Takes information of the current song which is playing
+- Uses the trained model on the dataset, to predict similar songs to the current one
+- Returns the response JSON
+
+3. -GET /top_track
+- Fetches the top 5 songs according to popularity from the dataset
+- Returns the response JSON
+
+4. -GET /top_artist
+- Fetches the top 4 artist from the dataset
+- Returns the response JSON
+  
 ## Model 
 [Training Notebook](Model.ipynb)
 
