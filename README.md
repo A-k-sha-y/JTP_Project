@@ -10,6 +10,8 @@ This project consists of Flask application for the backend API, React for client
 - [Running with Docker](#running-with-docker)
 - [Running without Docker](#running-without-docker)
 - [How to use](#how-to-use)
+- [API Documentation](#api-documentation)
+- [Model](#model)
 
 ## Features
 
