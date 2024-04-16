@@ -122,4 +122,4 @@ Step 4: Once you click on the play, The application will show you the similar so
 
 This model differs from traditional recommendation engines by focusing on song features rather than user interactions. It utilizes Nearest Neighbor models to calculate similarities between songs based on their features. To improve search accuracy, it incorporates fuzzywuzzy logic.
 
-You can access the dataset[Kaggle](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset)
+The model is trained on Spotify Tracks Dataset with around 1,14,000 data points [Kaggle](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset)
