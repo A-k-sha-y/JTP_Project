@@ -117,3 +117,8 @@ Step 4: Once you click on the play, The application will show you the similar so
 
 ![Recommendation](https://raw.githubusercontent.com/A-k-sha-y/JTP_Project/master/screenshots/Recommendation.png)
 ![Recommendation](https://raw.githubusercontent.com/A-k-sha-y/JTP_Project/master/screenshots/Recommendation2.png)
+
+## Model 
+[Training Notebook](Model.ipynb)
+
+This model differs from traditional recommendation engines by focusing on song features rather than user interactions. It utilizes Nearest Neighbor models to calculate similarities between songs based on their features. To improve search accuracy, it incorporates fuzzywuzzy logic.
