@@ -138,6 +138,15 @@ Step 4: Once you click on the play, The application will show you the similar so
 4. -GET /top_artist
 - Fetches the top 4 artist from the dataset
 - Returns the response JSON
+
+## Flow Diagrams
+
+### /Search
+![Home](https://raw.githubusercontent.com/A-k-sha-y/JTP_Project/master/screenshots/Search_flow.png)
+
+### /Recommend
+![Recommend](https://raw.githubusercontent.com/A-k-sha-y/JTP_Project/master/screenshots/Recommend_flow.png)
+
   
 ## Model 
 [Training Notebook](Model.ipynb)
