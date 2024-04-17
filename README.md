@@ -35,6 +35,8 @@ Step 1: Login to Docker
 Step 2: Pull the images and run the container
 ```bash
   docker run -d -p 5000:5000 akshay161202/back:latest
+```
+```bash
   docker run -d -p 3000:3000 akshay161202/front:latest
 ```
 Docker images pulled:
