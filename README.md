@@ -20,11 +20,11 @@ This project consists of Flask application for the backend API, React for client
 
 ## Running app on local machine
 
-To run the project locally, there are 2 methods, with docker and without docker.
+To run the project locally, 2 methods are there, with docker and without docker.
 
 ### Running with docker
 
-To run the project with docker, make sure you have [Docker](https://docs.docker.com/get-docker/) and [Git](https://git-scm.com/downloads) installed on your system. 
+To run the project with docker, you should have [Git](https://git-scm.com/downloads) and [D ocker](https://docs.docker.com/get-docker/) installed on your system. 
 
 Step 1: Clone the project
 
@@ -38,15 +38,15 @@ Step 2: Navigate to JTP_Project directory
   cd JTP_Project
 ```
 
-Step 3: Start the project using docker compose
+Step 3: Start the project by running docker compose
 
 ```bash
   docker-compose up --build
 ```
 
-Step 4: To access the application, go to your browser and type `http://localhost:3000` in the address bar.
+Step 4: To open the application, enter http://localhost:3000 into your browser's address bar.
 
-Step 5: Exit the application.
+Step 5: Close the application.
 
 ```bash
   docker-compose down
@@ -54,7 +54,7 @@ Step 5: Exit the application.
 
 ### Running without docker
 
-Make sure you have installed [Node](https://nodejs.org/en/download), [Python](https://www.python.org/downloads/),and [Git](https://git-scm.com/downloads) on your system.
+Make sure you have installed [Python](https://www.python.org/downloads/), [Node](https://nodejs.org/en/download),and [Git](https://git-scm.com/downloads) on your system.
 
 Step 1: Clone the project
 
@@ -62,13 +62,13 @@ Step 1: Clone the project
   https://github.com/A-k-sha-y/JTP_Project.git
 ```
 
-Step 2: Navigate to JTP_Project/server directory
+Step 2: Navigate to server directory
 
 ```bash
   cd JTP_Project/server
 ```
 
-Step 3: Install the python dependencies
+Step 3: Install the python dependencies required
 
 ```bash
   pip install -r requirements.txt
@@ -98,15 +98,15 @@ Step 7: Run the application
   npm start
 ```
 
-Step 8: To access the application, go to your browser and type `http://localhost:3000` in the address bar.
+Step 8: To open the application, enter http://localhost:3000 into your browser's address bar.
 
 ## How to use
 
-Step 1: Open a browser and type `localhost:3000` in the Address bar.
+Step 1: Open the browser and type `localhost:3000` in the Address bar to access the application. You will be able to see the home page with a sample set of songs and at the right top songs and top artists.
 
 ![Home](https://raw.githubusercontent.com/A-k-sha-y/JTP_Project/master/screenshots/Home.png)
 
-Step 2: Click on the Login Button at the top right, and either login in, or create a new account.
+Step 2: Click on the Login Button at the top right, and either login in, or create a new account by going to sign up page.
 
 ![Login](https://raw.githubusercontent.com/A-k-sha-y/JTP_Project/master/screenshots/Login.png)
 
@@ -139,12 +139,13 @@ Step 4: Once you click on the play, The application will show you the similar so
 - Fetches the top 4 artist from the dataset
 - Returns the response JSON
 
+(Note: As the dataset does not have images for the tracks so I am using the rapid api's [Spotify](https://rapidapi.com/Glavier/api/spotify23/) to fetch the images of the tracks by passing the track id.)
 ## Flow Diagrams
 
-### /Search
+### /search
 ![Home](https://raw.githubusercontent.com/A-k-sha-y/JTP_Project/master/screenshots/Search_flow.png)
 
-### /Recommend
+### /recommend
 ![Recommend](https://raw.githubusercontent.com/A-k-sha-y/JTP_Project/master/screenshots/Recommend_flow.png)
 
   
