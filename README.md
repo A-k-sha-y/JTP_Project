@@ -24,33 +24,26 @@ To run the project locally, 2 methods are there, with docker and without docker.
 
 ### Running with docker
 
-To run the project with docker, you should have [Git](https://git-scm.com/downloads) and [D ocker](https://docs.docker.com/get-docker/) installed on your system. 
+I have pushed images to the Docker Hub. To run the project with docker, you should have [Docker](https://docs.docker.com/get-docker/) installed on your system. 
 
-Step 1: Clone the project
+Step 1: Login to Docker
 
 ```bash
-  https://github.com/A-k-sha-y/JTP_Project.git
+  docker login -u "<username>" -p "<password>" docker.io 
 ```
 
-Step 2: Navigate to JTP_Project directory
-
+Step 2: Pull and run the frontend
 ```bash
-  cd JTP_Project
+  docker run -d -p 5000:5000 akshay161202/back:latest
 ```
 
-Step 3: Start the project by running docker compose
+Step 3: Pull and run the backend
 
 ```bash
-  docker-compose up --build
+  docker run -d -p 5000:5000 akshay161202/back:latest
 ```
 
 Step 4: To open the application, enter http://localhost:3000 into your browser's address bar.
-
-Step 5: Close the application.
-
-```bash
-  docker-compose down
-```
 
 ### Running without docker
 
