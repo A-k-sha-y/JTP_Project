@@ -139,7 +139,7 @@ Step 4: Once you click on the play, The application will show you the similar so
 - Fetches the top 4 artist from the dataset
 - Returns the response JSON
 
-(Note: Since the dataset lacks images for the tracks, I am using RapidAPI to retrieve the images by passing the track ID. To get images, pass your sceret key in the headers of the api call present in the [SongCard(https://github.com/A-k-sha-y/JTP_Project/blob/master/musicrecommender/src/components/SongCard.js) file. You will get it from [Spotify](https://rapidapi.com/Glavier/api/spotify23/) )
+(Note: Since the dataset lacks images for the tracks, I am using RapidAPI to retrieve the images by passing the track ID. To get images, pass your sceret key in the headers of the api call present in the [SongCard](https://github.com/A-k-sha-y/JTP_Project/blob/master/musicrecommender/src/components/SongCard.js) file. You will get it from [Spotify](https://rapidapi.com/Glavier/api/spotify23/) )
 
 ## Flow Diagrams
 
