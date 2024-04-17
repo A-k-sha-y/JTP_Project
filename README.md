@@ -139,7 +139,7 @@ Step 4: Once you click on the play, The application will show you the similar so
 - Fetches the top 4 artist from the dataset
 - Returns the response JSON
 
-(Note: As the dataset does not have images for the tracks so I am using the rapid api's [Spotify](https://rapidapi.com/Glavier/api/spotify23/) to fetch the images of the tracks by passing the track id.)
+(Note: Since the dataset lacks images for the tracks, I am using RapidAPI to retrieve the images by passing the track ID. To get images, pass your sceret key in the headers. You will get it from [Spotify](https://rapidapi.com/Glavier/api/spotify23/) )
 ## Flow Diagrams
 
 ### /search
