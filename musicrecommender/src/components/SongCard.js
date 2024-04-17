@@ -21,11 +21,11 @@ function SongCard({ song }) {
       params: {
         ids: `${song.track_id}`
       },
-      headers: {
-        // Pass your RapidAPI key
-        // 'X-RapidAPI-Key': '744e72f6b8msh520aafd14335eb3p1e9f82jsn6fdb53de48ce',
-        'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
-      }
+      // headers: {
+      //   // Pass your RapidAPI key
+      //   // 'X-RapidAPI-Key': '744e72f6b8msh520aafd14335eb3p1e9f82jsn6fdb53de48ce',
+      //   'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+      // }
     };
 
     try {
