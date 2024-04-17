@@ -13,6 +13,7 @@ function SongCard({ song }) {
     getData()
   })
 
+  // Rapidapi call to fetch images for songs
   const getData = async () => {
     const options = {
       method: 'GET',
@@ -21,7 +22,8 @@ function SongCard({ song }) {
         ids: `${song.track_id}`
       },
       headers: {
-        'X-RapidAPI-Key': '744e72f6b8msh520aafd14335eb3p1e9f82jsn6fdb53de48ce',
+        // Pass your RapidAPI key
+        // 'X-RapidAPI-Key': '744e72f6b8msh520aafd14335eb3p1e9f82jsn6fdb53de48ce',
         'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
       }
     };
