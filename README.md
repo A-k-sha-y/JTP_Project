@@ -29,7 +29,7 @@ To run the project with docker, you should have [Git](https://git-scm.com/downlo
 Step 1: Clone the project
 
 ```bash
-  https://github.com/A-k-sha-y/JTP_Project.git
+  git clone https://github.com/A-k-sha-y/JTP_Project.git
 ```
 
 Step 2: Navigate to JTP_Project directory
