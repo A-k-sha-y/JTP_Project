@@ -41,7 +41,7 @@ Step 2: Navigate to JTP_Project directory
 Step 3: Start the project by running docker compose
 
 ```bash
-  docker-compose up --build
+  docker-compose up
 ```
 
 Step 4: To open the application, enter http://localhost:3000 into your browser's address bar.
