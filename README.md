@@ -18,9 +18,9 @@ This project consists of Flask application for the backend API, React for client
 - Recommend songs based on the search.
 - Recommend similar songs based on the song.
 
-## Running app on local machine
+## Running app
 
-To run the project locally, 2 methods are there, with docker and without docker.
+To run the project, 2 methods are there, with docker and without docker.
 
 ### Running with docker
 
@@ -32,18 +32,18 @@ Step 1: Login to Docker
   docker login -u "<username>" -p "<password>" docker.io 
 ```
 
-Step 2: Pull and run the frontend
+Step 2: Pull the images and run the container
 ```bash
   docker run -d -p 5000:5000 akshay161202/back:latest
+  docker run -d -p 3000:3000 akshay161202/front:latest
 ```
+Docker images pulled:
+![Image](https://raw.githubusercontent.com/A-k-sha-y/JTP_Project/master/screenshots/Docker_image.png)
 
-Step 3: Pull and run the backend
+Docker containers:
+![Container](https://raw.githubusercontent.com/A-k-sha-y/JTP_Project/master/screenshots/Docker_container.png)
 
-```bash
-  docker run -d -p 5000:5000 akshay161202/back:latest
-```
-
-Step 4: To open the application, enter http://localhost:3000 into your browser's address bar.
+Step 3: To open the application, enter http://localhost:3000 into your browser's address bar.
 
 ### Running without docker
 
@@ -52,7 +52,7 @@ Make sure you have installed [Python](https://www.python.org/downloads/), [Node]
 Step 1: Clone the project
 
 ```bash
-  https://github.com/A-k-sha-y/JTP_Project.git
+  git clone https://github.com/A-k-sha-y/JTP_Project.git
 ```
 
 Step 2: Navigate to server directory
