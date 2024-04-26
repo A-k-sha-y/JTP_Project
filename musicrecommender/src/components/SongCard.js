@@ -8,11 +8,7 @@ import axios from 'axios';
 function SongCard({ song }) {
 
   const [image, setImage] = useState();
-
-  useEffect(() => {
-    getData()
-  })
-
+  
   // Rapidapi call to fetch images for songs
   const getData = async () => {
     const options = {
@@ -21,11 +17,12 @@ function SongCard({ song }) {
       params: {
         ids: `${song.track_id}`
       },
-      // headers: {
-      //   // Pass your RapidAPI key
-      //   // 'X-RapidAPI-Key': '744e72f6b8msh520aafd14335eb3p1e9f82jsn6fdb53de48ce',
-      //   'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
-      // }
+      headers: {
+        // Pass your RapidAPI key
+        // Note: The number of api calls are limited as it is free version so the call will fail and the image wont be visible after it exceeds the number of calls
+        'X-RapidAPI-Key': 'b4a57748c9msh9f3175127944073p1f4dbdjsnb78739a0f6d8',
+        'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+      }
     };
 
     try {
@@ -33,9 +30,14 @@ function SongCard({ song }) {
       console.log(response.data);
       setImage(response.data.tracks[0].album.images[0].url)
     } catch (error) {
-      console.error(error);
+      // console.error(error);
     }
   }
+  
+  useEffect(() => {
+    console.log("useEffect triggered"); // Log useEffect activation
+    getData();
+  }, [song.track_id]);
 
   const navigate = useNavigate();
 

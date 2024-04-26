@@ -155,7 +155,7 @@ def recommend():
     _, indices = knn.kneighbors(scaled_search_data)
 
     recommended_tracks = df.iloc[indices.flatten()][['track_name', 'artists', 'track_id']].drop_duplicates()['track_name'].unique()
-    recommended_tracks = recommended_tracks[:15]
+    recommended_tracks = recommended_tracks[:12]
 
     # Get recommended tracks
     recommended_track_artist = []
